@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* style */
+
+body {
+    font: 12px/28px Georgia, serif;
+    color: #333;
+    background-color:  #ffe6d0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    box-sizing: border-box; 
+    background-color: #ffe6d0;
+    line-height: 55px ;
+    height: 55px;
+    width: 100%;
+}
+
+.header h1 {
+    color: black;
+    font-size: 23px;
+    margin-left: -790px;
+    margin-bottom: 75px;
+}
+
+.navigasi {
+    font-size: 15px;
+    margin-right: -829px;
+}
+
+.navigasi li {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.navigasi li a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigasi li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.background {
+    background-color: white;
+    width: 780px;
+    height: 350px;
+    margin: 20px auto;
+    padding: 10px;
+    background-size: cover;
+    border: 1px solid #ffe6d0;
+    border-radius: 10px;
+}
+
+.judul h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+ }
+
+.hero {
+    background-image: url(img/rafi1.jpg);
+    width: 350px;
+    height: 350px;
+    background-position: left;
+    float: left;
+    margin-right: 11px;
+}
+
+
+.content {
+    text-align: justify;
+}
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
+}

@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* style */
+
+body {
+    font: 18px/28px Georgia, serif;
+    color: #333;
+    background-color:  #ffe6d0;
+    padding: px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    box-sizing: border-box; 
+    background-color: #ffe6d0;
+    line-height: 55px ;
+    height: 55px;
+    width: 100%;
+}   
+
+.header h1 {
+    color: black;
+    font-size: 23px;    
+    margin-left: -790px;
+}
+
+.navigasi {
+    font-size: 15px;
+    margin-right: -829px;
+}
+
+.navigasi li {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.navigasi li a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigasi li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.judul h1 {
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 17px;
+    text-decoration: underline;
+}
+
+.gambar-contact {
+    background-image: url(img/foto\ kontak.jpg);
+    width: 270px;
+    height: 270px;
+    margin: 40px auto;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.contact ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover; 
+    text-align: justify;
+    margin-right: 5px;
+}
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
+}
